@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
- $db = mysqli_connect('localhost','user','cars')
- or die('Error connecting to MySQL server.');
-?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
