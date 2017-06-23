@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <?php
- $db = mysqli_connect('testing471')
- or die('Error connecting to MySQL server.');
-?>
+$servername = "localhost";
+$username = "root";
+$password = "";
 
+// Create connection 
+$conn = mysqli_connect($servername, $username, $password,'car_rental');
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -91,12 +100,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+       <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 123";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -109,12 +124,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 124";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -126,12 +147,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 125";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -143,12 +170,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 131";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -160,12 +193,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo =132";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -177,12 +216,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 133";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -194,12 +239,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 134";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -211,12 +262,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 141";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -228,12 +285,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 142";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -245,12 +308,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 143";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -262,12 +331,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 151";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -279,12 +354,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 152";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -296,12 +377,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 153";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -313,12 +400,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 213";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -330,12 +423,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 214";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -347,12 +446,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 215";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -364,12 +469,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 231";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -381,12 +492,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 232";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -398,12 +515,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 233";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -415,12 +538,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+         <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 234";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -432,12 +561,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 241";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -449,12 +584,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+         <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 242";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -466,12 +607,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 243";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -483,12 +630,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 251";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -500,12 +653,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 252";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -517,12 +676,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 253";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -534,12 +699,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 313";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -551,12 +722,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 314";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -568,12 +745,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 315";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -585,12 +768,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 316";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -602,12 +791,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 331";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -619,12 +814,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 332";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -636,12 +837,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 341";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -653,12 +860,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+         <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 342";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -670,12 +883,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 343";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -687,12 +906,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 344";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -704,12 +929,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 351";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -721,12 +952,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 352";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -738,12 +975,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 353";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
@@ -755,182 +998,18 @@
           <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
 		</div>
   		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
-        </div>
-        <div class="view_button" href="#">
-            <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
-        </div>
-        </div><!-- /.col-lg-4 -->
-        <hr class="divider">
-        <div class="col-lg-4">
-          <div style="display:inline-block;vertical-align:top;">
-          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
-		</div>
-  		<div class="description" style="display:inline-block;">
-          <h2>Year:</h2>
-          <p>Make:</p>
-          <p>Model:</p>
-          <p>Type:</p>
-          <p>Color:</p>
-          <p>Capacity:</p>
+          <?php
+        $query = "SELECT * FROM cars WHERE SerialNo = 354";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['Make']?></h2>
+          <p><?php echo $row['Year'] .'<br />';  
+                   echo 'MODEL: ' . $row['Model'] . ' TYPE: ' . $row['Type'] . ' COLOR: ' . $row['Color'] . ' SIZE: ' .$row['Capcity'];
+                    ?>    
+          </p>
         </div>
         <div class="view_button" href="#">
             <a href="#" class="btn btn-lg btn-primary btn-block">Select</a>
