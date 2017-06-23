@@ -81,25 +81,26 @@ html, body{
   font-weight: normal;
 }*/
 
-.username {
+.username, .firstname {
 	width: 150px;
+	float: left;
 	margin: auto;
 }
 
-.password {
-	width: 200px;
-	margin-left: 300px;
+.password, .lastname {
+	width: 150px;
+	margin-left: 200px;
 }
 
-.license_number {
-	width: 200px;
-	margin-bottom: auto;
-	margin-left: 240px;
-}
 
 .age_dropdown, .gender_dropdown, .resident_dropdown {
 	width: 150px;
 	margin: auto;
+}
+
+.license_number {
+	width: 150px;
+	margin-left: 0;
 }
 
 .view_button{
