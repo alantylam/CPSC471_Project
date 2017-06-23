@@ -80,13 +80,13 @@ html, body{
   font-weight: normal;
 }*/
 
-.pickup_date, .pickup_location{
+.pickup_date, .pickup_location ,.firstname {
 	width: 200px;
 	float: left;
 	margin: auto;
 }
 
-.return_date, .return_location {
+.return_date, .return_location ,.lastname {
 	width: 200px;
 	margin-bottom: auto;
 	margin-left: 240px;
