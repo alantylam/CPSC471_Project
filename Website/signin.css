@@ -137,6 +137,12 @@ html, body{
 
 /*for log in*/
 
+.view_button{
+	width: 150px;
+	float: right;
+	margin-top: 10px;
+}
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
