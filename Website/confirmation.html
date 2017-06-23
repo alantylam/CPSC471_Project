@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Sign Up</title>
+    <title>Coverage</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="signup.css" rel="stylesheet">
+    <link href="confirmation.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -49,7 +49,6 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <!--<li class="active"><a href="#">Home</a></li>-->
 				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white">Reservation <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -69,94 +68,50 @@
 
       </div>
     </div>
-    
-    <div class="container">
 
-      <form class="form-reserve">
-        <h2>Sign-Up</h2>
-        <div class="account">
-          <h3 class="form-account-heading" style="color:grey">Create a username & password:</h2>
-          <div class="username">
-            <label for="username" class="sr-only">E-mail</label>
-            <input type="username" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
-     	  </div>
-     	  <div class="password">
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-		  </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+	  <div class="form">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">        
+          <h2 class="featurette-heading_1">Payment received!</h2>
+          <h4 class="payment">Confirmation will be sent to your e-mail shortly.</h4>
         </div>
-        <div class="name">
-          <h3 class="form-name-heading" style="color:grey">Please enter your first name & last name:</h2>
-          <div class="firstname">
-            <label for="firstname" class="sr-only">First Name</label>
-            <input type="firstname" id="inputFirstName" class="form-control" placeholder="First Name" required autofocus>
-     	  </div>
-     	  <div class="lastname">
-            <label for="lastname" class="sr-only">Last Name</label>
-            <input type="lastname" id="inputLastName" class="form-control" placeholder="Last Name" required>
-		  </div>
-        </div>
-        <div class="license">
-          <h4 class="form-license-heading" style="color:grey">License Number:</h2>
-          <div class="license_number">
-            <label for="license_number" class="sr-only">License Number</label>
-            <input type="license_number" id="inputLicenseNumber" class="form-control" placeholder="License Number" required autofocus>
+      </div>
+      <hr class="featurette-divider_1">
+      <div class="view_button" href="index.html">
+          <a href="index.html" class="btn btn-lg btn-primary btn-block">Done</a>
+      </div>
+      </div>
+      
+      <div class="form_summary">
+        <h2 class="featurette-heading_2">Summary(Paid):</h2>
+        <hr class="featurette-divider_2">
+        <div class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <p align="left">Car Selected (Per Day):</p>
+            <p align="right">$1050</p>
+            <p align="left">Coverage:</p>
+            <p align="right">Yes</p>
           </div>
         </div>
-        <div class="age">
-          <h4 class="form-age-heading" style="color:grey">Age</h2>
-          <select class="age_dropdown">
-            <option value="Select">Select below~</option>
-  			<option value="18">18</option>
-  			<option value="19">19</option>
-  			<option value="20">20</option>
-  			<option value="21">21</option>
-  			<option value="22">22</option>
-  			<option value="23">23</option>
-  			<option value="24">24</option>
-  			<option value="25+">25+</option>
-		  </select>
-        </div>
-        <div class="gender">
-          <h4 class="form-gender-heading" style="color:grey">Gender</h2>
-          <select class="gender_dropdown">
-            <option value="Select">Select below~</option>
-  			<option value="male">male</option>
-  			<option value="female">female</option>
-  			<option value="others">others</option>
-		  </select>
-        </div>
-        <div class="resident">
-          <h4 class="form-resident-heading" style="color:grey">Resident of</h2>
-          <select class="resident_dropdown">
-            <option value="Select">Select below~</option>
-  			<option value="AB">AB</option>
-  			<option value="BC">BC</option>
-  			<option value="SK">SK</option>
-  			<option value="MB">MB</option>
-  			<option value="ON">ON</option>
-  			<option value="QC">QC</option>
-  			<option value="NL">NL</option>
-  			<option value="NB">NB</option>
-  			<option value="PE">PE</option>
-  			<option value="NS">NS</option>
-  			<option value="YT">YT</option>
-  			<option value="NT">NT</option>
-  			<option value="NU">NU</option>
-		  </select>
-        </div>
-        <div class="view_button" href="index.html">
-          <a href="index.html" class="btn btn-lg btn-primary btn-block">Done</a>
-        </div>
-      </form>
+        <hr class="featurette-divider_3">
+        <h4 class="total">Total:</h4>
+        <p class="pull-right">$3000</p>
+      </div>
 
-    </div> <!-- /container -->
-    
-
+      <!-- /END THE FEATURETTES -->
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p style="color:grey">&copy; 2017 ABA Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a href="#" style="color:white">Back to top</a></p>
+        <p class="pull-left" style="color:white">&copy; 2017 ABA Inc. &middot; <a href="#" style="color:white">Privacy</a> &middot; <a href="#" style="color:white">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->

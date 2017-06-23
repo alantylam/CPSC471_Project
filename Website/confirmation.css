@@ -61,7 +61,7 @@ html, body{
 }
 
 /* Thin out the marketing headings */
-.featurette-heading_1, .roadside, .damage {
+.featurette-heading_1, .payment {
   margin-left: -220px;
   font-weight: 300;
   line-height: 1;
@@ -111,7 +111,7 @@ html, body{
 	width: 150px;
 	float: right;
 	margin-top: -50px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .coverage_pic{
@@ -128,7 +128,6 @@ html, body{
   border-style: solid;
   border-radius: 10px;
   margin-top: 100px;
-  margin-bottom: 70px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -140,8 +139,9 @@ html, body{
   float: right;
   border-style: solid;
   border-radius: 10px;
-  margin-top: -630px;
+  margin-top: -193px;
   margin-left: 580px;
+  margin-bottom: 380px;
   padding-right: 15px;
   padding-left: 15px;
 }
