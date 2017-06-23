@@ -1,0 +1,51 @@
+Make,Model,Type,Color,SerialNo,Capcity,Year
+Bentley,Bentayga,SUV,Purple,123,5,2014
+Bentley,Bentayga,SUV,Red,124,5,2011
+Bentley,Bentayga,SUV,Gold,125,5,2013
+Bentley,Continental Supersports,Coupe,Silver,213,4,2016
+Bentley,Continental Supersports,Coupe,Red,214,4,2017
+Bentley,Continental Supersports,Coupe,Green,215,4,2016
+Bentley,Flying Spur,Sedan,Silver,313,5,2015
+Bentley,Flying Spur,Sedan,Gold,314,5,2014
+Bentley,Flying Spur,Sedan,Brown,315,5,2013
+Bentley,Flying Spur,Sedan,Red,316,5,2012
+Ferrari,California T,Coupe,Red,421,4,2012
+Ferrari,California T,Coupe,Blue,422,4,2017
+Ferrari,California T,Coupe,Black,423,4,2016
+Ferrari,488 GTB,Coupe,Gold,424,2,2016
+Ferrari,488 GTB,Coupe,Pink,425,2,2015
+Ferrari,488 GTB,Coupe,Silver,426,2,2011
+Ferrari,488 GTB,Coupe,Blue,427,2,2012
+Ferrari,La Ferrari,Coupe,Black,521,2,2013
+Ferrari,La Ferrari,Coupe,Blue,522,2,2013
+Ferrari,La Ferrari,Coupe,Green,523,2,2017
+Maserati,Ghibli M157,Sedan,White,131,4,2017
+Maserati,Ghibli M157,Sedan,Red,132,4,2017
+Maserati,Ghibli M157,Sedan,Blue,133,4,2016
+Maserati,Ghibli M157,Sedan,Silver,134,4,2016
+Maserati,Levante,SUV,Silver,231,5,2015
+Maserati,Levante,SUV,Gold,232,5,2014
+Maserati,Levante,SUV,White,233,5,2014
+Maserati,Levante,SUV,Black,234,5,2013
+Maserati,Quattroporte,Sedan,Blue,331,5,2013
+Maserati,Quattroporte,Sedan,Black,332,5,2014
+Mercedes-Benz,S-Class,Sedan,Silver,141,5,2016
+Mercedes-Benz,S-Class,Sedan,Red,142,5,2016
+Mercedes-Benz,S-Class,Sedan,Blue,143,5,2014
+Mercedes-Benz,C-Class,Sedan,White,241,5,2015
+Mercedes-Benz,C-Class,Sedan,Gold,242,5,2015
+Mercedes-Benz,C-Class,Sedan,Red,243,5,2014
+Mercedes-Benz,GLS,SUV,Silver,341,5,2017
+Mercedes-Benz,GLS,SUV,Gold,342,5,2017
+Mercedes-Benz,GLS,SUV,Red,343,5,2016
+Mercedes-Benz,GLS,SUV,Black,344,5,2017
+BMW,3 Series,Sedan,Black,151,5,2016
+BMW,3 Series,Sedan,Blue,152,5,2017
+BMW,3 Series,Sedan,Red,153,5,2017
+BMW,5 Series,Sedan,Blue,251,5,2016
+BMW,5 Series,Sedan,Red,252,5,2015
+BMW,5 Series,Sedan,White,253,5,2016
+BMW,2 Series,Coupe,Red,351,4,2017
+BMW,2 Series,Coupe,White,352,4,2017
+BMW,2 Series,Coupe,Black,353,4,2016
+BMW,2 Series,Coupe,Green,354,4,2015
