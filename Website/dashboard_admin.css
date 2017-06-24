@@ -103,3 +103,8 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+.remove, .add{
+	width: 150px;
+	margin-bottom: 10px;
+}
