@@ -128,14 +128,3 @@ html, body{
 .form-reserve .form-control:focus {
   z-index: 2;
 }
-/*
-.form-reserve input[type="pickup_date"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-reserve input[type="pickup_date"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}*/
