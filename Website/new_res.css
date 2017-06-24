@@ -79,7 +79,8 @@ html, body{
 .form-reserve .form-location-heading,
 .form-reserve .form-age-heading,
 .form-reserve .form-resident-heading,
-.form-reserve .form-gender-heading {
+.form-reserve .form-gender-heading,
+.form-reserve .form-creditcard-heading {
   margin-bottom: 10px;
 }
 /*.form-reserve .checkbox {
@@ -94,6 +95,11 @@ html, body{
 
 .license {
 	width: 200px;
+	margin-left: 0;
+}
+
+.creditcard_number {
+	width: 180px;
 	margin-left: 0;
 }
 

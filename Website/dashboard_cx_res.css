@@ -92,7 +92,6 @@ body {
 
 .placeholders {
   margin-bottom: 30px;
-  text-align: center;
 }
 .placeholders h4 {
   margin-bottom: 0;
@@ -109,12 +108,11 @@ body {
 -------------------------------------------------- */
 
 .form-reserve {
+  float: left;
+  width: 600px;
   border-style: solid;
   border-color: rgb(0, 0, 155);
   border-radius: 10px;
-  margin-top: 80px;
-  padding-bottom: 40px;
-  padding-top: 30px;
   padding-left: 40px;
   background: rgb(255,255,255);
   background-size: cover;
@@ -126,9 +124,6 @@ body {
 .form-reserve .form-gender-heading {
   margin-bottom: 10px;
 }
-/*.form-reserve .checkbox {
-  font-weight: normal;
-}*/
 
 .pickup_date, .pickup_location ,.firstname {
 	width: 200px;
@@ -155,9 +150,9 @@ body {
 .view_button{
 	width: 150px;
 	float: right;
-	margin-top: -30px;
+	margin-top: 20px;
 	margin-right: 30px;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 
 .form-reserve .form-control {
