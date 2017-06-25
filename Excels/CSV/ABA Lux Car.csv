@@ -1,0 +1,51 @@
+make,model,type,color,serial_no,capacity,year,price,availability
+Bentley,Bentayga,SUV,Purple,123,5,2014,400,Y
+Bentley,Bentayga,SUV,Red,124,5,2011,400,Y
+Bentley,Bentayga,SUV,Gold,125,5,2013,400,Y
+Bentley,Continental Supersports,Coupe,Silver,213,4,2016,500,Y
+Bentley,Continental Supersports,Coupe,Red,214,4,2017,500,Y
+Bentley,Continental Supersports,Coupe,Green,215,4,2016,500,Y
+Bentley,Flying Spur,Sedan,Silver,313,5,2015,450,Y
+Bentley,Flying Spur,Sedan,Gold,314,5,2014,450,Y
+Bentley,Flying Spur,Sedan,Brown,315,5,2013,450,Y
+Bentley,Flying Spur,Sedan,Red,316,5,2012,450,Y
+Ferrari,California T,Coupe,Red,421,4,2012,550,Y
+Ferrari,California T,Coupe,Blue,422,4,2017,550,Y
+Ferrari,California T,Coupe,Black,423,4,2016,550,Y
+Ferrari,488 GTB,Coupe,Gold,424,2,2016,600,Y
+Ferrari,488 GTB,Coupe,Pink,425,2,2015,600,Y
+Ferrari,488 GTB,Coupe,Silver,426,2,2011,600,Y
+Ferrari,488 GTB,Coupe,Blue,427,2,2012,600,Y
+Ferrari,La Ferrari,Coupe,Black,521,2,2013,650,Y
+Ferrari,La Ferrari,Coupe,Blue,522,2,2013,650,Y
+Ferrari,La Ferrari,Coupe,Green,523,2,2017,650,Y
+Maserati,Ghibli M157,Sedan,White,131,4,2017,450,Y
+Maserati,Ghibli M157,Sedan,Red,132,4,2017,450,Y
+Maserati,Ghibli M157,Sedan,Blue,133,4,2016,450,Y
+Maserati,Ghibli M157,Sedan,Silver,134,4,2016,450,Y
+Maserati,Levante,SUV,Silver,231,5,2015,400,Y
+Maserati,Levante,SUV,Gold,232,5,2014,400,Y
+Maserati,Levante,SUV,White,233,5,2014,400,Y
+Maserati,Levante,SUV,Black,234,5,2013,400,Y
+Maserati,Quattroporte,Sedan,Blue,331,5,2013,500,Y
+Maserati,Quattroporte,Sedan,Black,332,5,2014,500,Y
+Mercedes-Benz,S-Class,Sedan,Silver,141,5,2016,500,Y
+Mercedes-Benz,S-Class,Sedan,Red,142,5,2016,500,Y
+Mercedes-Benz,S-Class,Sedan,Blue,143,5,2014,500,Y
+Mercedes-Benz,C-Class,Sedan,White,241,5,2015,300,Y
+Mercedes-Benz,C-Class,Sedan,Gold,242,5,2015,300,Y
+Mercedes-Benz,C-Class,Sedan,Red,243,5,2014,300,Y
+Mercedes-Benz,GLS,SUV,Silver,341,5,2017,600,Y
+Mercedes-Benz,GLS,SUV,Gold,342,5,2017,600,Y
+Mercedes-Benz,GLS,SUV,Red,343,5,2016,600,Y
+Mercedes-Benz,GLS,SUV,Black,344,5,2017,600,Y
+BMW,3 Series,Sedan,Black,151,5,2016,300,Y
+BMW,3 Series,Sedan,Blue,152,5,2017,300,Y
+BMW,3 Series,Sedan,Red,153,5,2017,300,Y
+BMW,5 Series,Sedan,Blue,251,5,2016,450,Y
+BMW,5 Series,Sedan,Red,252,5,2015,450,Y
+BMW,5 Series,Sedan,White,253,5,2016,450,Y
+BMW,2 Series,Coupe,Red,351,4,2017,250,Y
+BMW,2 Series,Coupe,White,352,4,2017,250,Y
+BMW,2 Series,Coupe,Black,353,4,2016,250,Y
+BMW,2 Series,Coupe,Green,354,4,2015,250,Y
