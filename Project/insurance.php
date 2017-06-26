@@ -129,15 +129,32 @@ echo "Coonected Successfully";
       	</div>
       </form>
       
-      <div class="form_summary">
+      <form class="form_summary">
         <h2 class="featurette-heading_2">Car Selected:</h2>
         <hr class="featurette-divider_2">
-        <div class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <p align="right">show detail of the selected car HERE</p>
-          </div>
+            <?php
+$query = "SELECT * FROM cars WHERE EXISTS (SELECT vin FROM reservations WHERE reservation = ('$rowcount'))";
+$result = mysqli_query($conn, $query);
+$row = mysqli_fetch_array($result);
+
+$car = $row['price'];
+
+$query = "SELECT * FROM company WHERE EXISTS (SELECT location FROM reservations WHERE reservation = ('$rowcount'))";
+$result = mysqli_query($conn, $query);
+$com = mysqli_fetch_array($result);
+
+$location = $com['location'];
+
+?>
+          <p><?php echo 'Make: ' . $row['make'] . '<br />'. 'Year: '  . $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />';
+                   echo ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />';
+                   echo ' Price: $' . $row['price'] . ' / Day ' . '<br />';
+                   echo 'Location:' . $location;
+                    ?>    
+          </p>
         </div>
-      </div>
+      </form>
 
       <!-- /END THE FEATURETTES -->
       <!-- FOOTER -->

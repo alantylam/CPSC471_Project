@@ -76,6 +76,7 @@
         <h1>New Reservation</h1>
         <div class="date">
           <h3 class="form-date-heading" style="color:grey">Date & Time</h3>
+          <p>(Date Format: DD/MM/YYYY)</p>
           <div class="pickup_date">
             <label for="pickup_date" class="sr-only">Pick-up date</label>
             <input name="pdate" type="pickup_date" id="inputPickupDate" class="form-control" placeholder="Pick-up date" required autofocus>
@@ -89,8 +90,8 @@
           <h4 class="form-location-heading" style="color:grey">Pick a location</h4>
           <select name="location" class="location_dropdown" required>
             <option value="Select">Select below~</option>
-  			<option value="YYC_North">YYC_North</option>
-  			<option value="YYC_South">YYC_South</option>
+  			<option value="YYC_North">255 North Calgary Trail</option>
+  			<option value="YYC_South">123 South Calgary Trail</option>
 		  </select>
         </div>
         <div class="name">
@@ -106,6 +107,7 @@
         </div>
         <div class="license">
           <h4 class="form-license-heading" style="color:grey">License Number:</h4>
+          <p>(Entry Format: #########)</p>
           <div class="license_number">
             <label for="license_number" class="sr-only">License Number</label>
             <input name="lnumber" type="license_number" id="inputLicenseNumber" class="form-control" placeholder="License Number" required autofocus>
@@ -113,6 +115,7 @@
         </div>
         <div class="creditcard">
           <h4 class="form-creditcard-heading" style="color:grey">Credit Card:</h2>
+          <p>(Entry Format: ######)</p>
           <div class="creditcard_number">
             <label for="creditcard_number" class="sr-only">Credit Card Number</label>
             <input name="ccnumber" type="creditcard_number" id="inputCreditCardNumber" class="form-control" placeholder="Credit Card Number" required autofocus>
@@ -126,7 +129,7 @@
   			<option value="22">22</option>
   			<option value="23">23</option>
   			<option value="24">24</option>
-  			<option value="25+">25+</option>
+  			<option value="25">25+</option>
 		  </select>
         </div>
         <div class="gender" required>

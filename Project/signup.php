@@ -76,6 +76,7 @@
         <h1>Sign-Up</h1>
         <div class="account">
           <h3 class="form-account-heading" style="color:grey">Create a username & password:</h2>
+          <p>(Email Format: 123@example.com)</p>
           <div class="username">
             <label for="username" class="sr-only">E-mail</label>
             <input name="username" type="username" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
@@ -98,6 +99,7 @@
         </div>
         <div class="license">
           <h4 class="form-license-heading" style="color:grey">License Number:</h2>
+          <p>(Entry Format: #########)</p>
           <div class="license_number">
             <label for="license_number" class="sr-only">License Number</label>
             <input name="lnumber" type="license_number" id="inputLicenseNumber" class="form-control" placeholder="License Number" required autofocus>
@@ -105,6 +107,7 @@
         </div>
         <div class="creditcard">
           <h4 class="form-creditcard-heading" style="color:grey">Credit Card:</h2>
+          <p>(Entry Format: ######)</p>
           <div class="creditcard_number">
             <label for="creditcard_number" class="sr-only">Credit Card Number</label>
             <input name="cnumber" type="creditcard_number" id="inputCreditCardNumber" class="form-control" placeholder="Credit Card Number" required autofocus>

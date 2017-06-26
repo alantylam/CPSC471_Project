@@ -1147,6 +1147,266 @@ $result = mysqli_query($conn, $q) or die('Error inserting reservation info into 
         </form>
         <hr class="divider">
 <!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 421";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="421">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 422";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="422">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 423";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="423">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 424";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="424">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 425";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="425">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 426";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="426">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 427";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="427">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 521";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="521">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 522";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="522">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
+        <form action="insurance.php" method="post">
+        <div class="col-lg-4">
+          <div style="display:inline-block;vertical-align:top;">
+          <img class="img-circle" src="Images/cro1.jpg" alt="Generic placeholder image" width="140" height="140">
+		</div>
+  		<div class="description" style="display:inline-block;">
+          <?php
+        $query = "SELECT * FROM cars WHERE serial_no = 523";
+        mysqli_query($conn, $query) or die('Error querying database.');
+
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+          <h2><?php echo $row['make']?></h2>
+          <p><?php echo $row['year'] .'<br />';  
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ' . '<br />' . ' Available: ' . $row['availability'];
+                    ?>    
+          </p>
+        </div>
+        <div class="view_button">
+          <button name="vehicleid" class="btn btn-lg btn-primary btn-block" type="submit" value="523">Continue</button>
+        </div>
+        </div><!-- /.col-lg-4 -->
+        </form>
+        <hr class="divider">
+<!--==================================================Separate!==================================================-->
       </div><!-- /.row -->
 
       <!-- /END THE FEATURETTES -->

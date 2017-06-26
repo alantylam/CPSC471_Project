@@ -123,11 +123,18 @@ $row = mysqli_fetch_array($result);
 
 $car = $row['price'];
 
+$query = "SELECT * FROM company WHERE EXISTS (SELECT location FROM reservations WHERE reservation = ('$rowcount'))";
+$result = mysqli_query($conn, $query);
+$com = mysqli_fetch_array($result);
+
+$location = $com['location'];
+
 ?>
 
           <h4><?php echo "Car Selected:"; ?></h4>
           <p><?php echo 'Make: ' . $row['make'] . '<br />'. 'Year: '  . $row['year'] .'<br />';  
-                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day ';
+                   echo 'Model: ' . $row['model'] . '<br />' . ' Type: ' . $row['type'] . '<br />' . ' Color: ' . $row['color'] . '<br />' . ' Size: ' .$row['capacity'] . '<br />' . ' Price: $' . $row['price'] . ' / Day '. '<br />';
+                   echo 'Location:' . $location;
                     ?>    
           </p>
         
