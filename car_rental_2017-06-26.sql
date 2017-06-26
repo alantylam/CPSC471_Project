@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.5-10.1.21-MariaDB)
 # Database: car_rental
-# Generation Time: 2017-06-25 23:20:36 +0000
+# Generation Time: 2017-06-26 17:00:04 +0000
 # ************************************************************
 
 
@@ -42,8 +42,8 @@ LOCK TABLES `cars` WRITE;
 
 INSERT INTO `cars` (`make`, `model`, `type`, `color`, `serial_no`, `capacity`, `year`, `price`, `availability`)
 VALUES
-	('Bentley','Bentayga','SUV','Purple',123,5,2014,400,'Y'),
-	('Bentley','Bentayga','SUV','Red',124,5,2011,400,'Y'),
+	('Bentley','Bentayga','SUV','Purple',123,5,2014,400,'N'),
+	('Bentley','Bentayga','SUV','Red',124,5,2011,400,'N'),
 	('Bentley','Bentayga','SUV','Gold',125,5,2013,400,'Y'),
 	('Bentley','Continental Supersports','Coupe','Silver',213,4,2016,500,'Y'),
 	('Bentley','Continental Supersports','Coupe','Red',214,4,2017,500,'Y'),
@@ -58,21 +58,21 @@ VALUES
 	('Ferrari','488 GTB','Coupe','Gold',424,2,2016,600,'Y'),
 	('Ferrari','488 GTB','Coupe','Pink',425,2,2015,600,'Y'),
 	('Ferrari','488 GTB','Coupe','Silver',426,2,2011,600,'Y'),
-	('Ferrari','488 GTB','Coupe','Blue',427,2,2012,600,'Y'),
-	('Ferrari','La Ferrari','Coupe','Black',521,2,2013,650,'Y'),
+	('Ferrari','488 GTB','Coupe','Blue',427,2,2012,600,'N'),
+	('Ferrari','La Ferrari','Coupe','Black',521,2,2013,650,'N'),
 	('Ferrari','La Ferrari','Coupe','Blue',522,2,2013,650,'Y'),
 	('Ferrari','La Ferrari','Coupe','Green',523,2,2017,650,'Y'),
 	('Maserati','Ghibli M157','Sedan','White',131,4,2017,450,'Y'),
 	('Maserati','Ghibli M157','Sedan','Red',132,4,2017,450,'Y'),
 	('Maserati','Ghibli M157','Sedan','Blue',133,4,2016,450,'Y'),
-	('Maserati','Ghibli M157','Sedan','Silver',134,4,2016,450,'Y'),
-	('Maserati','Levante','SUV','Silver',231,5,2015,400,'Y'),
+	('Maserati','Ghibli M157','Sedan','Silver',134,4,2016,450,'N'),
+	('Maserati','Levante','SUV','Silver',231,5,2015,400,'N'),
 	('Maserati','Levante','SUV','Gold',232,5,2014,400,'Y'),
 	('Maserati','Levante','SUV','White',233,5,2014,400,'Y'),
 	('Maserati','Levante','SUV','Black',234,5,2013,400,'Y'),
 	('Maserati','Quattroporte','Sedan','Blue',331,5,2013,500,'Y'),
-	('Maserati','Quattroporte','Sedan','Black',332,5,2014,500,'Y'),
-	('Mercedes-Benz','S-Class','Sedan','Silver',141,5,2016,500,'Y'),
+	('Maserati','Quattroporte','Sedan','Black',332,5,2014,500,'N'),
+	('Mercedes-Benz','S-Class','Sedan','Silver',141,5,2016,500,'N'),
 	('Mercedes-Benz','S-Class','Sedan','Red',142,5,2016,500,'Y'),
 	('Mercedes-Benz','S-Class','Sedan','Blue',143,5,2014,500,'Y'),
 	('Mercedes-Benz','C-Class','Sedan','White',241,5,2015,300,'Y'),
@@ -81,8 +81,8 @@ VALUES
 	('Mercedes-Benz','GLS','SUV','Silver',341,5,2017,600,'Y'),
 	('Mercedes-Benz','GLS','SUV','Gold',342,5,2017,600,'Y'),
 	('Mercedes-Benz','GLS','SUV','Red',343,5,2016,600,'Y'),
-	('Mercedes-Benz','GLS','SUV','Black',344,5,2017,600,'Y'),
-	('BMW','3 Series','Sedan','Black',151,5,2016,300,'Y'),
+	('Mercedes-Benz','GLS','SUV','Black',344,5,2017,600,'N'),
+	('BMW','3 Series','Sedan','Black',151,5,2016,300,'N'),
 	('BMW','3 Series','Sedan','Blue',152,5,2017,300,'Y'),
 	('BMW','3 Series','Sedan','Red',153,5,2017,300,'Y'),
 	('BMW','5 Series','Sedan','Blue',251,5,2016,450,'Y'),
@@ -291,16 +291,16 @@ LOCK TABLES `reservations` WRITE;
 
 INSERT INTO `reservations` (`reservation`, `location`, `sub_total`, `pickup_date`, `drop_date`, `vin`, `license`, `coverage`)
 VALUES
-	(1,'YYC_South',2000,'23/05/2017','28/05/2017',123,123456789,1),
-	(2,'YYC_North',1200,'21/08/2017','24/08/2017',124,133456789,2),
-	(3,'YYC_South',5400,'14/11/2017','23/11/2017',427,986754382,3),
-	(4,'YYC_South',2600,'01/12/2017','05/12/2017',521,364527183,4),
-	(5,'YYC_North',2250,'23/09/2017','28/09/2017',134,321321312,4),
-	(6,'YYC_North',1000,'20/09/2017','22/09/2017',332,654654654,5),
-	(7,'YYC_North',10000,'08/07/2017','28/07/2017',141,888999000,3),
-	(8,'YYC_South',1600,'01/04/2017','05/04/2017',231,970960593,2),
-	(9,'YYC_North',3000,'23/07/2017','28/07/2017',344,563018920,1),
-	(10,'YYC_South',300,'27/06/2017','28/06/2017',151,133456789,0);
+	(1,'YYC_South',1600,'26/06/2017','28/06/2017',123,123456789,1),
+	(2,'YYC_North',1550,'27/06/2017','30/06/2017',124,133456789,2),
+	(3,'YYC_South',950,'28/06/2017','29/06/2017',427,986754382,3),
+	(4,'YYC_South',2850,'01/07/2017','05/07/2017',521,364527183,4),
+	(5,'YYC_North',11500,'03/07/2017','28/07/2017',134,321321312,4),
+	(6,'YYC_North',5750,'01/07/2017','12/07/2017',332,654654654,5),
+	(7,'YYC_North',1350,'28/06/2017','30/06/2017',141,888999000,3),
+	(8,'YYC_South',1950,'01/07/2017','05/07/2017',231,970960593,2),
+	(9,'YYC_North',15200,'04/07/2017','28/07/2017',344,563018920,1),
+	(10,'YYC_South',1200,'26/06/2017','30/06/2017',151,133456000,0);
 
 /*!40000 ALTER TABLE `reservations` ENABLE KEYS */;
 UNLOCK TABLES;
